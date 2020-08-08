@@ -43,7 +43,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataset', type=str, default='timit', help='select dataset', choices=['timit', 'yoho'])
     parser.add_argument('--model_type', type=str, default='n_msg', help='`n_msg` default model type, `n_msg_cond` conditional message decoding, `baseline` is the frequency-chop baseline', choices=['n_msg', 'n_msg_cond', 'baseline'])
     parser.add_argument('--carrier_detach', default=-1, type=int, help='flag that stops gradients from the generated carrier and back. if -1 will not be used, if set to k!=-1 then gradients will be stopped from the kth iteration (used for fine-tuning the message decoder)')
-    parser.add_argument('--add_stft_noise', default=-1, type=int, help='flag that trasforms the generated carrier spectrogram back to the time domain to simulate real-world conditions. if -1 will not be used, if set to k!=-1 will be used from the kth iteration')
+    parser.add_argument('--add_stft_noise', default=0, type=int, help='flag that trasforms the generated carrier spectrogram back to the time domain to simulate real-world conditions. if -1 will not be used, if set to k!=-1 will be used from the kth iteration')
     parser.add_argument('--add_carrier_noise', default=None, type=str, choices=['gaussian', 'snp', 'salt', 'pepper', 'speckle'], help='add different types of noise the the carrier spectrogram')
     parser.add_argument('--carrier_noise_norm', default=0.0, type=float, help='strength of carrier noise')
     parser.add_argument('--adv', action='store_true',default=False, help='flag that indicates if adversarial training should be used')
