@@ -1,0 +1,9 @@
+boltons==20.2.0
+loguru==0.5.1
+numpy==1.19.1
+pandas==1.1.0
+PyYAML==5.3.1
+SoundFile==0.10.3.post1
+tensorboardX==2.1
+torch==1.0.0
+tqdm==4.48.2
