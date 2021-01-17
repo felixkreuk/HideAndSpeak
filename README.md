@@ -20,7 +20,7 @@ If you find this paper and implementation useful, please consider citing our wor
 }
 ```
 ## Audio samples
-Audio samples are available [here](https://felixkreuk.github.io/steganography/output.html).
+Audio samples are available [here](https://felixkreuk.github.io/Hide-and-Speak-Towards-Deep-Neural-Networks-for-Speech-Steganography/).
 
 ## Clone repository
 ```
